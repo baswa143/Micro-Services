@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::baseLayout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<section>
+
+		<h1>To register, kindly enter your details below:-</h1>
+
+		<form th:action="@{/handlelogin}"  method="post">
+		
+			<div class="mb-3">
+				<label for="email" class="form-label">email</label> 
+				<input type="text" name="username" class="form-control" id="email">
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">password</label> 
+				<input type="text" name="password" class="form-control" id="password">
+			</div>
+
+			
+			<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+
+	</section>
+
+</body>
+</html>

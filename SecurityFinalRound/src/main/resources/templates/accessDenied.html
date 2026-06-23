@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::baseLayout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<section>
+
+		<h1>Access Denied</h1>
+		<p>You do not have permission to access this page.</p>
+		<a th:href="@{/products}">Go Back</a>
+
+	</section>
+
+</body>
+</html>
